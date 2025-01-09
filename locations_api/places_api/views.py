@@ -10,4 +10,4 @@ class PlaceList(generics.ListCreateAPIView):
 
 class PlaceDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Place.objects.all().order_by('id')
-    serializer_class PlaceSerializer
+    serializer_class = PlaceSerializer
